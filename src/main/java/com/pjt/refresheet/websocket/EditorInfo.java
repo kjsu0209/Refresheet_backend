@@ -2,6 +2,8 @@ package com.pjt.refresheet.websocket;
 
 import lombok.*;
 
+import java.util.List;
+
 @Data
 @RequiredArgsConstructor
 @AllArgsConstructor
@@ -20,6 +22,8 @@ public class EditorInfo {
     private String name;
     private String ipAddr;
     private String sheetId;
+    private String sessionId;
+    private List<EditorInfo> currentEditors;
 
     public void setName(){
         int randNum1 = (int)(Math.random() * nameList1.length);

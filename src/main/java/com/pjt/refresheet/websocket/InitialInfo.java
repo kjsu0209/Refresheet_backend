@@ -9,5 +9,6 @@ import lombok.*;
 public class InitialInfo {
 
     private String ipAddr;
+    private String sessionId;
 
 }

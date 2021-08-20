@@ -17,7 +17,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void configureMessageBroker(MessageBrokerRegistry config){
         // 클라이언트 목적지를 topic으로 지정
-        // config.enableSimpleBroker("/topic");
+        config.enableSimpleBroker("/topic");
 
         // 메시지 목적지를 MessageMapping된 메서드에 바인딩
         config.setApplicationDestinationPrefixes("/app");

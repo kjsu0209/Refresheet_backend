@@ -15,9 +15,9 @@
 
 ### ScreenShots  
 #### Table 편집  
-편집되는 내용은 onChange이벤트로 실시간으로 웹 소켓 서버에 전송되고, 커서가 input창 밖으로 나가면 DB에 값이 업데이트됩니다.
+편집되는 내용은 onChange이벤트로 실시간으로 웹 소켓 서버에 전송되고, 커서가 input창 밖으로 나가면 DB에 값이 업데이트됩니다.  
 ![image](https://user-images.githubusercontent.com/35682236/133249366-5763769d-3610-49cd-a366-e70a17d5df87.png)  
-onChange 이벤트 발생 시, 같은 Sheet ID를 구독하는 구독자에게 변경 이벤트가 broadcast됩니다. 구독자는 구독자의 ip 주소와 웹 소켓 서버 연결 시 발급되는 session id로 구분합니다.  
+onChange 이벤트 발생 시, 같은 Sheet ID를 구독하는 구독자에게 변경 이벤트가 broadcast됩니다. 구독자는 구독자의 ip 주소와 웹 소켓 서버 연결 시 발급되는 session id로 구분합니다.   
 ![image](https://user-images.githubusercontent.com/35682236/133249424-1a76527e-7bf6-461d-b278-1dc627060454.png)
 
 #### Column 추가  
